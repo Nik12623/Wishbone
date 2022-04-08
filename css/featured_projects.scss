@@ -1,0 +1,151 @@
+.featured_projects{
+  background: #F7F7F7;
+  padding: 113px 0 111px 0;
+  @include max-screen(768px){
+    padding: 50px 0;
+  }
+  .row{
+    .col-md-6{
+      h2{
+        font-size: 39px;
+        line-height: 42px;
+        color: $primary;
+        margin-bottom: 15px;
+        @include max-screen(768px){
+          font-size: 29px;
+          line-height: 35px;
+        }
+        @include max-screen(567px){
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+      p{
+        font-size: 24px;
+        line-height: 30px;
+        color: $grey;
+        margin-bottom: 44px;
+        @include max-screen(768px){
+          margin-bottom: 30px;
+          font-size: 20px;
+          line-height: 26px;
+        }
+        @include max-screen(768px){
+          margin-bottom: 20px;
+          font-size: 17px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .row{
+    .col-md-4{
+      margin-bottom: 53px;
+      img{
+        display: block;
+        max-width: 100%;
+        position: relative;
+        @include max-screen(768px){
+          margin: 0 auto;
+        }
+      }
+      &.central{
+        div{
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          @include max-screen(992px){
+            top: 20px;
+            left: 25px;
+          }
+          @include max-screen(768px){
+            top: 40px;
+            left: 105px;
+          }
+          @include max-screen(400px){
+             top: 40px;
+             left: 40px;
+           }
+          p{
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $grey;
+          }
+          h5{
+            font-size: 23px;
+            line-height: 30px;
+            color: $secondary;
+            margin-bottom: 252px;
+            @include max-screen(1200px){
+              margin-bottom: 182px;
+            }
+            @include max-screen(992px){
+              margin-bottom: 122px;
+              font-size: 19px;
+              line-height: 25px;
+            }
+            @include max-screen(768px){
+              margin-bottom: 272px;
+            }
+            @include max-screen(400px){
+              margin-bottom: 242px;
+            }
+            @include max-screen(360px){
+              margin-bottom: 162px;
+            }
+          }
+          a{
+            width: fit-content;
+            display: inline-block;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            color: $white;
+            padding: 11px 20px;
+            background-color: $primary;
+            border-radius: 14px;
+            text-decoration: none;
+            &:hover{
+              background-color: #CEC4BC;
+              transition: background-color 0.2s linear;
+            }
+            @include max-screen(400px){
+              font-size: 14px;
+              padding: 8px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .link{
+    a{
+      display: inline-block;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.4px;
+      color: $primary;
+      margin: 0 auto;
+      text-decoration: none;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        opacity: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #444444;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 1;
+        transition: opacity 0.2s linear; }
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+  }
+
+}

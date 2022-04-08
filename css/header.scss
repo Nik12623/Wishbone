@@ -1,0 +1,37 @@
+header{
+  .navbar-light{
+    padding: 22px 0;
+    .navbar-nav{
+      .nav-item{
+        transition: 0.3s;
+        margin-left: 31px;
+        .nav-link{
+          font-size: 15px;
+          line-height: 24px;
+          color: $primary;
+          padding: 0;
+        }
+
+        &:hover, &:active{
+          .nav-link{
+            color: #CEC4BC;
+            transition: color 0.2s linear;
+          }
+        }
+
+        &:last-of-type{
+          background-color: $primary;
+          border-radius: 14px;
+          padding: 11px 20px;
+          .nav-link{
+            color: $white;
+          }
+          &:hover{
+            background-color: #CEC4BC;
+            transition: background-color 0.2s linear;
+          }
+        }
+      }
+    }
+  }
+}

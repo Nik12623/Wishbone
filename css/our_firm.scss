@@ -1,0 +1,41 @@
+.our_firm{
+  padding: 100px 0;
+  @include max-screen(576px){
+    padding: 50px 0;
+  }
+  p{
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: $secondary;
+    @include max-screen(576px){
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .d-flex{
+    margin-top: 8px;
+    align-items: center;
+  }
+  .rounded_circle{
+    margin-right: 30px;
+    img{
+      display: block;
+    }
+  }
+  .description{
+
+    font-size: 17px;
+    line-height: 26px;
+    color: $primary;
+    p{
+      margin-bottom: 0;
+    }
+    span{
+      display: block;
+      font-size: 14px;
+      line-height: 14px;
+      color: $grey;
+
+    }
+  }
+}
